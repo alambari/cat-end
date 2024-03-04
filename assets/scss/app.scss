@@ -1,0 +1,55 @@
+@import 'ant-design-vue/dist/antd.min.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
+// #app {
+//   height: 100vh;
+// }
+
+// Base
+@import './base/_variables';
+@import './base/_utilities';
+// // @import './base/_override';
+// @import './base/_typography';
+// @import './base/_custom';
+
+// // // Layouts
+// @import './layouts/custom';
+@import './layouts/default';
+
+// // // Components
+// @import './components/_icons';
+// // @import './components/_avatar';
+@import './components/_badge';
+// // @import './components/_button';
+@import './components/_card';
+// // @import './components/_chart';
+// // @import './components/_list';
+// // @import './components/_progress';
+// // @import './components/_settings-drawer';
+// // @import './components/_space';
+@import './components/_table';
+// // @import './components/_tag';
+// // @import './components/_timeline';
+// // @import './components/_widget';
+// // @import './components/dropdown';
+@import './components/_carousel';
+// // // / Components
+
+// // // Form
+// // @import './form/_input';
+@import './form/_radio';
+// // @import './form/_checkbox';
+// // // / Form
+
+
+.key-item {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+.key-value {
+  font-size: 15px;
+}

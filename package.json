@@ -1,0 +1,35 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@mdi/js": "^7.3.67",
+    "@pinia/nuxt": "^0.5.1",
+    "@sidebase/nuxt-session": "^0.2.7",
+    "ant-design-vue": "^3.2.20",
+    "dayjs-nuxt": "^2.1.9",
+    "libphonenumber-js": "^1.10.51",
+    "nuxt": "^3.8.2",
+    "pinia": "^2.1.7",
+    "sass": "^1.69.5",
+    "underscore": "^1.13.6",
+    "vue": "^3.3.8",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@types/underscore": "^1.11.15",
+    "eslint": "^8.54.0"
+  },
+  "engines": {
+    "node": "20.8.x",
+    "npm": "10.1.x"
+  }
+}

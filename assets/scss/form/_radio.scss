@@ -1,0 +1,9 @@
+.ant-radio-group {
+  &.radio-group-vertical {
+    >.ant-radio-wrapper {
+      display: flex;
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+}

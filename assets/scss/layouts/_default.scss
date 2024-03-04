@@ -1,0 +1,229 @@
+// Dashboard Layout
+
+.ant-layout {
+  &.default {
+    text-align: left;
+    position: relative;
+    overflow-x: hidden;
+
+    @media( min-width: $lg ) {
+      overflow: auto;
+    }
+
+    > .ant-layout {
+      background: 0 0;
+      position: relative;
+      min-height: 100vh;
+      width: 100%;
+      flex-shrink: 0;
+
+      @media( min-width: $lg ) {
+        width: auto;
+        flex-shrink: 1;
+        margin-left: 260px;
+      }
+
+      &.collapse {
+        margin-left: 80px;
+      }
+
+      .ant-layout-content {
+        padding: 0px;
+        margin: 20px 20px;
+      }
+    }
+
+    .ant-layout-sider {
+      .logo {
+        margin: 7px 10px;
+        text-align: center;
+        img {
+          width: 80%;
+          height: auto;  
+        }
+      }
+
+      &.ant-layout-sider-collapsed {
+        .logo {
+          margin: 15px 10px;
+          img {
+            width: 100%;
+          }
+        }  
+      }
+    }
+
+    .menu-link {
+      .menu-icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+      }
+
+      .menu-label {
+        vertical-align: middle;
+      }
+    }
+
+    .ant-layout-sider {
+      background: transparent;
+      transition: .2s;
+
+      &.sider-primary {
+        position: fixed;
+        left: 0;
+        z-index: 99;
+        overflow: auto;
+
+        @media( min-width: $lg ) {
+          margin: 0 0 0 0;
+          padding: 10px 0 10px 0;
+          height: 100vh;
+        }        
+      }
+
+      .ant-menu {
+        background: transparent;
+
+        &.ant-menu-inline-collapsed {
+          > .ant-menu-item {
+            padding: 0 25%;
+          }
+    
+          > .ant-menu-submenu {
+            > .ant-menu-submenu-title {
+              padding: 0 25%;
+            }
+          }
+    
+          .ant-menu-item,
+          .ant-menu-submenu {
+            .menu-label {
+              display: inline-block;
+              opacity: 0;
+            }
+          }
+        }  
+      }
+    }
+
+    .ant-layout-header {
+      background: transparent;
+      height: auto;
+      padding: 16px;
+      margin: 10px 4px;
+      line-height: inherit;
+      border-radius: 12px;
+      transition: .2s;
+          
+      @media( min-width: $md ) {
+      	margin: 10px 20px;
+      }
+
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    &.navbar-fixed {
+      .ant-layout > div > .ant-affix .ant-layout-header {
+        background: $color-gray-1;
+        box-shadow: $shadow-1;
+        margin: 10px 20px;
+      }
+      &.has-sidebar .ant-layout > div > .ant-affix {
+        z-index: 1;
+        @media( min-width: $lg ){
+          z-index: 10;
+        }
+      }
+    }
+
+    .header-control {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin-top: 10px;
+          
+      @media( min-width: $md ){
+        margin-top: 0;
+      }
+  
+      .ant-btn-link {
+        height: auto;
+        padding: 0 7px;
+        margin: 0;
+        box-shadow: none;
+        color: $color-gray-7;
+      }
+      .ant-dropdown-link {
+        padding: 0 7px;
+        margin: 0;
+      }
+      .btn-sign-in {
+        height: auto;
+        padding: 0 7px;
+        margin: 0;
+        box-shadow: none;
+        svg {
+          margin-right: 4px;
+        }
+        span {
+          font-weight: $fw-semibold;
+          vertical-align: middle;
+          display: none;
+          
+          @media( min-width: $md ){
+            display: inline;
+          }
+        }
+      }
+      svg {
+        vertical-align: middle;
+        path {
+          fill: $color-gray-12;
+        }
+      }
+      .sidebar-toggler {
+        display: block;
+        @media( min-width: $lg ){
+          display: none;
+        }
+      }
+    }    
+  }
+}
+
+.ant-tooltip {
+  .menu-link {
+    .menu-icon {
+      width: 32px;
+      height: 32px;
+      margin-right: 5px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      vertical-align: middle;
+    }
+
+    .menu-label {
+      vertical-align: middle;
+    }
+  }
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+
+  + label {
+    vertical-align: middle;
+  }
+}
